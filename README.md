@@ -18,3 +18,19 @@ This project is a simple web application that displays the weather information f
    ```
 - You need to replace the placeholder API_KEY in the JavaScript code with your actual API key.
 - Open the cloned folder in VSCode and fire up the Local Development server using [Live Server extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
+
+- ## Screenshots
+
+Check Screen               |  City Weather
+:-------------------------:|:-------------------------:
+<img src="weather_01.png" height="250em" />|<img src="weather_02.png" height="250em" />|
+
+Location Weather           |  Alerts       
+:-------------------------:|:-------------------------:
+<img src="weather_03.png" height="250em" />|<img src="weather_04.png" height="250em" />|
+
+
+## Features
+- Display the current weather conditions, including temperature, weather description, humidity, and wind speed.
+- Show a relevant weather icon representing the current weather conditions.
+- Convert the temperature between Celsius and Fahrenheit.
