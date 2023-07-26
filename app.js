@@ -12,10 +12,10 @@ app.get("/", function(req, res){
 });
 
 app.post("/", function(req, res){
-console.log(req.body.cityName);
+console.log(req.pressure);
 const url = "http://api.openweathermap.org/data/2.5/weather?q=" + req.body.cityName+ "&appid=4e046c34a987ab3041e3e2d0621ebe90&units=metric";
     https.get(url, function(response){
-        console.log(response.statusCode);
+        console.log(response.statusMessage);
 
         response.on("data", function(data){
             const weatherData = JSON.parse(data);
@@ -33,10 +33,6 @@ const url = "http://api.openweathermap.org/data/2.5/weather?q=" + req.body.cityN
     });
 
 })
-
-    
-
-
 
 app.listen(3000, function(){
     console.log("Server is on and running on port 3000");
